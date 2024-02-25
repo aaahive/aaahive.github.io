@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.website.com/">
+
+    <meta name="description" content="Meta description for the page">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="Title that shows up on google searches"/>
+    <meta property="og:description" content="Meta description for the page"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="Official link for that page (https://www.site.com)"/>
+    <meta property="og:image" content="/assets/images/social.jpg"/>
+    <meta property="og:image:secure_url" content="/assets/images/social.jpg"/>
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="img/aaahive.webp">
+    <link rel="preload" as="font" type="font/woff2" href="fonts/InterVariable.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="fonts/InterVariable-Italic.woff2" crossorigin>
+
+    <link rel="stylesheet" href="css/core-styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/dark.css">
+
+    <title>Service Keyword Phrase | Company Name | City, State</title>
+</head>
+<body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="index.html" class="cs-logo" aria-label="back to home">
+                <img src="img/aaahive_logo.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="index.html" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        
+                        <li class="cs-li">
+                            <a href="#services" class="cs-li-link">
+                                Services
+                            </a>
+                        </li>
+
+                        <li class="cs-li">
+                            <a href="#about" class="cs-li-link">
+                                Over Ons
+                            </a>
+                        </li>
+
+                        <li class="cs-li">
+                            <a href="#contact" class="cs-li-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="#contact" class="cs-button-solid cs-nav-button">Contact Us</a>
+            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+            <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- ============================================ -->
+        <!--                    Hero                      -->
+        <!-- ============================================ -->
+
+        <section id="hero-81">
+            <div class="cs-container">
+                <h1 class="cs-title">Snel succesvoller met Data, Digitaal en/of AI</h1>
+                <p class="cs-text">
+                    Diepgaande technische én bedrijfstechnische expertise met focus op mensen en het behalen van ambitieuze doelstellingen.
+                </p>
+                <a href="#contact" class="cs-button-solid">Ik maak graag kennis!</a>
+            </div>
+
+            <!-- Background Image -->
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="img/happy_technology.jpg">
+                <source media="(min-width: 601px)" srcset="img/happy_technology.jpg">
+                <img loading="lazy" decoding="async" src="img/happy_technology.jpg" alt="kitchen" width="2250" height="1500" aria-hidden="true">
+            </picture>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                   Services                   -->
+        <!-- ============================================ -->
+
+        <section id="services">
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-icon">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/toolbox.svg" alt="appliance" width="52" height="52" aria-hidden="true">
+                    </picture>
+                    <h2 class="cs-title">Digital Business Strategy</h2>
+                    <p class="cs-text">
+                        Een optimale technische oplossing om uw bedrijfsdoelstellingen te halen, en een optimale weg daar naartoe met grondig begrip waar uw organisatie nu staat.
+                        Ruime ervaring in implementatie van standaard én maatwerk op het gebied van data en software en iets recenter artificial intelligence.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/buildings.svg" alt="appliance" width="52" height="52" aria-hidden="true">
+                    </picture>
+                    <h2 class="cs-title">(Project) Management</h2>
+                    <p class="cs-text">
+                        Strategie is executie. Meer dan 25 jaar ervaring met het aansturen van (technische) teams en complex stakeholder management.
+                        Samen kom je ver als je open en helder communiceert.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/gear.svg" alt="appliance" width="52" height="52" aria-hidden="true">
+                    </picture>
+                    <h2 class="cs-title">Cyber Security</h2>
+                    <p class="cs-text">
+                        Pragmatische informatiebeveiliging toegesneden op waar u met uw organisatie staat en risico's die u loopt.
+                        ISO-27001, Cobit 5, ITILv4
+                    </p>
+                </li>
+            </ul>
+        </section>                     
+                                
+        <!-- ============================================ -->
+        <!--                   About Us                   -->
+        <!-- ============================================ -->
+
+        <section id="about">
+            <div class="cs-container">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="img/jeroen_beachvolley.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="img/jeroen_beachvolley.jpg">
+                    <img loading="lazy" decoding="async" src="img/jeroen_beachvolley.jpg" alt="Honeybees in a hive" width="494" height="700">
+                </picture>
+                <div class="cs-content">
+                    <span class="cs-topper">Wie Wij Zijn</span>
+                    <h2 class="cs-title">AAAHive Solutions</h2>
+                    <p class="cs-text">
+                      Wij zijn gedreven voor technologie, mensen en (commercieel) succes; persoonlijk een doorslaggevende rol te kunnen spelen om uw organisatie (nog) succesvoller te maken.
+                      Dit door actief te luisteren naar de sleutelsignalen voor een transformatieve strategie met een creatieve, innovatieve en vooral pragmatische oplossing, daarbij existentiële uitdagingen gecountered en commerciële mogelijkheden uitbatend.        
+                    </p>
+                    <p class="cs-text">
+                        Wij excelereren als kritische denker op strategisch, tactisch en operationeel niveau. Uitdagend en ambitieus onderwijl doel- en mens-gericht blijvend, staan voor uitvoerbare visies, noodzakelijke transformaties en synergiën, maar luchtkastelen rücksichtlos afschietend.
+                     </p>
+                     <!--
+                    <a href="" class="cs-button-solid">Get Free Quote</a>
+                    -->
+                </div>
+            </div>
+        </section>
+                                        
+        <!-- ============================================ -->
+        <!--             Service Highlight                -->
+        <!-- ============================================ -->
+
+        <section id="whatwedo">
+            <div class="cs-container">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="img/honeybees-hive.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="img/honeybees-hive.jpg">
+                    <img loading="lazy" decoding="async" src="img/honeybees-hive.jpg" alt="room" width="494" height="700">
+                </picture>
+                <div class="cs-content">
+                    <span class="cs-topper">Wat Wij Doen</span>
+                    <h2 class="cs-title">Expertise en Ervaring</h2>
+                    <p class="cs-text">
+                        Business Strategy; Bringing IT and Business together, Strategy is Execution, Business Transformation, Mergers and Acquisitions
+                        Product Management; Design Thinking, Agile, SaaS (Software as a Service), Cloud, Product Vision, UX
+                        Development Management; Craftmanship, Agile (Kanban and Scrum), Lean, Continuous improvement, RCAs/Retros
+                        HR; Manager as Coach, Leading by example, Continuous dialogs, Clear expectations, eHRM
+                        
+                    </p>
+                    <h2 class="cs-title">Tools</h2>
+                    <p class="cs-text">
+                        PowerPoint, Excel/GSheet and Word/Gdoc, Wireframes, Yammer, Slack, 
+                        Jira/Confluence, Trello, SharePoint, Azure DevOps, GitHub
+                        Power BI, Kibana, SAP R3 FI/CO, Pipedrive, Salesforce, Azure Data Factory, MongoDB, Redis, ElasticSearch, Azure SQL Datawarehouse (T-SQL), Oracle (PL/SQL), PostgreSQL,
+                        Python, C#, Java, SQL, R, Visual Studio, Eclipse, Emacs, Vi
+                        AWS, Azure, Windows, Linux, Unix
+                    </p>
+                    <!--
+                    <a href="" class="cs-button-solid">Get Free Quote</a>
+                    -->
+                </div>
+            </div>
+        </section>
+                    
+
+        <!-- ============================================ -->
+        <!--                     CTA                      -->
+        <!-- ============================================ -->
+
+        <section id="contact">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Contacteer ons</span>
+                    <h2 class="cs-title"></h2>
+                    <p class="cs-text">
+                        Vrijblijven voor een oriënterend gesprek. Graag leren we u en uw organisatie beter kennen om aan de hand daarvan onze mogelijkheden te kunnen toelichten.
+                    </p>
+                    <!--
+                    <a href="" class="cs-button-solid">Gret A Free Quote</a>
+                    -->
+                </div>
+            </div>
+            <!-- Background Image-->
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="img/achievement-agreement-arms-bump.jpg">
+                <source media="(min-width: 601px)" srcset="img/achievement-agreement-arms-bump.jpg">
+                <img loading="lazy" decoding="async" src="img/achievement-agreement-arms-bump.jpg" alt="Arms bumping after achievement" width="1920" height="1280" aria-hidden="true">
+            </picture>
+        </section>                                          
+    </main>
+
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-269">
+        <div class="cs-container">
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="img/aaahive_logo_wb.webp" alt="logo" width="240" height="32">
+                </a>
+                <p class="cs-text">
+                    AAAHive&nbsp;Solutions&nbsp;B.V.<br/>
+                    2e&nbsp;Delistraat&nbsp;8<br/>
+                    3531SZ&nbsp;Utrecht,&nbsp;NL<br/>
+                    <br/>
+                    KvK&nbsp;93008341<br/>
+                    BTW&nbsp;NL866246952B01
+               </p>
+            </div>
+            <!-- Links -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Sitemap</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="index.html">Home</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="#about">Over Ons</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="#services">Services</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <!-- Contact Info -->
+            <ul class="cs-contact">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Contact</span>
+                </li>
+                <li class="cs-contact-li">
+                    <a class="cs-contact-link" href="mailto:info@codestitch.com">info@aaahive.com</a>
+                </li>
+                <li class="cs-contact-li">
+                    <a class="cs-contact-link" href="tel: +31 6 14575607">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="img/phone.svg" alt="Phone" width="11" height="11">
+                        +31 6 14575607
+
+                    </a>
+                </li>
+                <!-- Social Media -->
+                <!--
+                <li class="cs-contact-li cs-social-group">
+                    <div class="cs-social">
+                        <a class="cs-social-link" aria-label="visit google profile" href="">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
+                        </a>
+                        <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                        </a>
+                        <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                        </a>
+                    </div>
+                </li>
+                -->
+            </ul>
+        </div>
+    </footer>
+                                
+
+    <script defer src="js/nav.js"></script>
+
+    <!--Gallery JS-->
+    <script>
+        class CS_GalleryFilter {
+            filtersSelector = '.cs-button'
+            galleriesSelector = '.cs-gallery'
+            activeClass = 'cs-active'
+            hiddenClass = 'cs-hidden'
+
+            constructor() {
+                this.$galleries = document.querySelectorAll(this.galleriesSelector)
+                const $filters = document.querySelectorAll(this.filtersSelector)
+
+                this.onClick($filters[0])
+
+                for (const $filter of $filters) {
+                    $filter.addEventListener('click', () => this.onClick($filter))
+                }
+            }
+
+            onClick($filter) {
+                this.filter($filter.dataset.filter)
+
+                const { activeClass } = this
+
+                this.$activeFilter?.classList.remove(activeClass)
+                $filter.classList.add(activeClass)
+
+                this.$activeFilter = $filter
+            }
+
+            filter(filter) {
+                const showAll = filter == 'all'
+                const { hiddenClass } = this
+
+                for (const $gallery of this.$galleries) {
+                    const show = showAll || $gallery.dataset.category == filter
+                    $gallery.classList.toggle(hiddenClass, !show)
+                }
+            }
+        }
+
+        new CS_GalleryFilter()
+                                
+    </script>
+</body>
+</html>
