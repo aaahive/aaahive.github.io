@@ -776,6 +776,8 @@
     text-align: left;
     color: var(--bodyTextColorWhite);
     display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
   #cs-footer-269 .cs-contact-link:hover {
     text-decoration: underline;
