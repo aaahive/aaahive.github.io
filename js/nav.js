@@ -1,3 +1,18 @@
+// Jeroen: language negotiation and toggling
+if (!document.location.href.match(/\/(en|nl)\//)) {
+    for (const lang of navigator.languages) {
+        if (lang.startsWith('nl')) {
+            const page = document.location.href.match(/\/[a-z.]+html.*/)
+            document.location.replace('/nl'+page);
+            break;
+        }
+        if (lang.startsWith('en')) {
+            break;
+        }
+    }
+}
+
+
 // add classes for mobile navigation toggling
     var CSbody = document.querySelector("body");
     const CSnavbarMenu = document.querySelector("#cs-navigation");
