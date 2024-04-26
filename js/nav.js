@@ -2,7 +2,7 @@
 if (!document.location.href.match(/\/(en|nl)\//)) {
     for (const lang of navigator.languages) {
         if (lang.startsWith('nl')) {
-            const page = document.location.href.match(/\/[a-z.]+html.*/)
+            let page = document.location.href.match(/\/[a-z.]+html.*/)
             if (!page) {
                 page = '/index.html';
             }
