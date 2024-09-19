@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="/https://aaahive.com/">
+
+    <meta name="description" content="AAAHive Solutions - More Successful Fast with Data, Digital and AI">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="AAAHive Solutions - More Successful Fast with Data, Digital and AI"/>
+    <meta property="og:description" content="Profound technical and business expertise with focus on people _and_ achieving ambitious goals. Strategy is execution."/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aaahive.com/"/>
+    <meta property="og:image" content="/img/aaahive_logo.svg"/>
+    <meta property="og:image:secure_url" content="/img/aaahive_logo.svg"/>
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="/img/aaahive_logo.svg">
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/InterVariable.woff2" crossorigin>
+    <!-- only for italic text:
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/InterVariable-Italic.woff2" crossorigin>
+    -->
+
+    <link rel="stylesheet" href="/css/core-styles.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/dark.css">
+
+    <title>AAAHive - More Successful Fast with Data, Digital and AI</title>
+</head>
+<body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="/index.html" class="cs-logo" aria-label="back to home">
+                <img src="/img/aaahive_logo.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async"> AAAHive
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="/index.html" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        
+                        <li class="cs-li">
+                            <a href="#services" class="cs-li-link">
+                                Services
+                            </a>
+                        </li>
+
+                        <li class="cs-li">
+                            <a href="#about" class="cs-li-link">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li class="cs-li">
+                            <a href="#contact" class="cs-li-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="#contact" class="cs-button-solid cs-nav-button">Contact Us</a>
+
+            <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                <svg class="cs-moon" decoding="async" width="15" height="15" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" alt="moon icon - CC0 1.0" aria-hidden="true">
+                        <path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/>
+                </svg><br>
+                <svg class="cs-sun" decoding="async" width="15" height="15" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" alt="sun icon - CC0 1.0" aria-hidden="true">
+                    <path style="fill:#FFA600;" d="M507.834,301.608l-54.769-48.312l52.832-50.399c1.941-1.852,2.74-4.591,2.099-7.189
+                        c-0.642-2.597-2.629-4.655-5.211-5.401l-70.316-20.292l25.988-68.056c0.955-2.5,0.495-5.316-1.204-7.389
+                        c-1.7-2.072-4.383-3.085-7.038-2.657l-72.274,11.652l-5.878-72.561c-0.216-2.666-1.846-5.015-4.275-6.161
+                        c-2.429-1.146-5.291-0.917-7.504,0.601l-60.266,41.342L263.409,3.742C262.064,1.426,259.579,0,256.889,0
+                        c-2.69,0-5.174,1.426-6.519,3.742L208.347,76.11l-72.69-41.953c-2.327-1.343-5.197-1.349-7.528-0.018
+                        c-2.333,1.331-3.773,3.799-3.78,6.473l-0.176,72.795l-72.965-6.014c-2.675-0.22-5.275,0.997-6.807,3.194
+                        c-1.533,2.197-1.771,5.041-0.622,7.459l31.242,65.835L6.508,209.562c-2.516,0.943-4.335,3.15-4.773,5.789
+                        c-0.438,2.638,0.575,5.308,2.656,7.003l56.619,46.152l-50.813,52.41c-1.866,1.925-2.559,4.694-1.816,7.264
+                        c0.744,2.57,2.81,4.55,5.419,5.194l71.055,17.551L61.56,419.936c-0.856,2.535-0.286,5.331,1.494,7.336
+                        c1.781,2.005,4.502,2.913,7.137,2.382l71.76-14.443l8.721,72.278c0.319,2.655,2.041,4.938,4.513,5.99
+                        c2.474,1.052,5.323,0.712,7.475-0.891l58.596-43.647l39.055,59.566c1.382,2.179,3.789,3.492,6.367,3.492
+                        c0.098,0,0.196-0.002,0.295-0.006c2.687-0.104,5.115-1.626,6.368-3.992l34.107-62.405l61.839,38.974
+                        c2.273,1.432,5.137,1.55,7.522,0.31c2.382-1.24,3.919-3.65,4.03-6.322l3.031-72.734l72.674,8.84c2.664,0.324,5.31-0.791,6.928-2.927
+                        c1.618-2.137,1.966-4.969,0.914-7.43l-28.636-66.997l69.465-23.003c2.552-0.845,4.456-2.979,4.997-5.599
+                        C510.752,306.09,509.845,303.383,507.834,301.608z"/>
+                    <ellipse style="fill:#FFDB2D;" cx="254.35" cy="254.691" rx="155.069" ry="154.949"/>
+                    <path style="fill:#FFCA00;" d="M254.354,99.743c-3.884,0-7.732,0.147-11.543,0.428c80.25,5.901,143.525,72.825,143.525,154.521
+                        c0,81.695-63.275,148.619-143.525,154.521c3.811,0.28,7.66,0.428,11.543,0.428c85.641,0,155.068-69.373,155.068-154.948
+                        C409.422,169.116,339.995,99.743,254.354,99.743z"/>
+                </svg>
+            </button>
+            <div id="lang-selector">
+                <form id="lang-selector">
+                    <b>EN</b><br/>
+                    <a href="/nl/index.html">NL</a>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- ============================================ -->
+        <!--                    Hero                      -->
+        <!-- ============================================ -->
+
+                                
+        <!-- ============================================ -->
+        <!--                   Policy                   -->
+        <!-- ============================================ -->
+        <section id="policy">
+            <div class="cs-container">
+<h1 class="cs-title">PRIVACY POLICY</h1>
+<p class="cs-text">
+    Dit is de Privacy Policy van AAAHive Solutions B.V. (hierna te noemen "AAAHive", "wij,"
+    "ons" of "onze"), een onderneming met adres 2e Delistraat 8, Utrecht. AAAHive is
+    ingeschreven bij de Kamer van Koophandel onder nummer 93008341. Deze Privacy Policy
+    legt uit hoe wij gegevens verzamelen, gebruiken, delen en beschermen in relatie tot onze
+    website aaahive.com (de "Website"). Wij verzamelen deze gegevens wanneer u onze Website
+    bezoekt met uw computer, tablet, telefoon of smartwatch ("Computer"). Wij verwerken
+    persoonsgegevens op een manier welke in overeenstemming is met de Algemene Verordening
+    Gegevensbescherming, inclusief uitvoeringswet van deze verordening, of de voorafgaande
+    wetgeving van de Wet Bescherming Persoonsgegevens en eventuele toekomstige wijzigingen
+    (de "AVG"), de telecommunicatiewet en de andere op dit moment geldende privacywetgeving.
+    Door het gebruiken van onze Website, begrijpt u en gaat u akkoord met het verzamelen en
+    gebruiken van informatie in overeenstemming met de Privacy Policy. Onze Privacy Policy is
+    van toepassing op alle bezoekers, gebruikers en alle anderen die de toegang hebben tot de
+    Website ("Gebruikers").
+</p>
+<h2 class="cs-title">Wat voor gegevens verzamelen wij?</h2>
+<h3 class="cs-title">Persoonsgegevens die u ons verstrekt</h3>
+<p class="cs-text">
+    Wij verzamelen persoonsgegevens die u ons verstrekt. Een persoonsgegeven betreft informatie
+    over een geïdentificeerde of identificeerbare natuurlijke persoon. Hierbij kunt u denken aan de
+    volgende gegevens:
+    <ol>
+    <li>a. Communicatie tussen AAAHive en u (wij mogen u dienst-gerelateerde e-mails sturen)
+    </li>
+    </ol>
+</p>
+<h3 class="cs-title">Log file informatie</h3>
+<p class="cs-text">
+    Wij verzamelen alleen informatie die uw browser stuurt als u onze Website bezoekt wanneer
+    dit noodzakelijk is voor het goed functioneren van de Website. Onder het goed functioneren
+    van de Website verstaan wij met name het beschermen van de Website tegen handelingen die
+    de veiligheid van de Website en van uw Computer in gevaar kunnen brengen. Dit logbestand
+    kan informatie bevatten zoals uw IP-adres, browser-type, browser-versie, de pagina’s van onze
+    Website die u bezoekt, de tijd en datum van uw bezoek, de tijd die u besteedt op deze pagina’s
+    en andere statistieken.
+</p>
+<h2 class="cs-title">Doeleinden verwerking gegevens</h2>
+<p class="cs-text">
+    Door het gebruik van onze diensten laat u bepaalde gegevens bij ons achter, bijvoorbeeld door
+    het aanmaken van een account. Het kan dan gaan om gegevens zoals naam, e-mailadres,
+    woonplaats, telefoonnummer en betaalgegevens. AAAHive verzamelt en verwerkt deze
+    gegevens om onze diensten toegankelijk te maken. Wij verzamelen tevens informatie over uw
+    Computer (zoals IP-adres, browsertype en besturingssysteem), zodat wij onze diensten kunnen
+    verbeteren. De persoonsgegevens worden niet verstrekt aan derden, tenzij wij daartoe op grond
+    van de wet- en regelgeving verplicht zijn.
+</p>
+<h2 class="cs-title">Rechtsgrond verwerking gegevens</h2>
+<p class="cs-text">
+    Er zijn meerdere grondslagen op basis waarvan AAAHive persoonsgegevens kan verwerken.
+    Dit zijn: de uitvoering van een overeenkomst, het gerechtvaardigd belang, op grond van een
+    wettelijke verplichting of op grond van jouw toestemming. We verwerken uw
+    persoonsgegevens voor zover dat noodzakelijk is om het doel waarvoor we de
+    persoonsgegevens verzamelen te behalen.
+</p>
+<h2 class="cs-title">Hoe gebruiken wij deze informatie?</h2>
+<p class="cs-text">
+    Alle informatie die wij verzamelen gebruiken wij om onze Website te ondersteunen en
+    verbeteren door:
+    <ol>
+    <li>het onthouden van informatie zodat u het niet opnieuw hoeft in te voeren bij een volgend bezoek aan onze Website;
+    </li>
+    <li>het leveren, verbeteren, testen, en monitoren van de doeltreffendheid van onze Website;
+    </li>
+    <li>het monitoren van meetwaarden zoals totaal aantal bezoekers, verkeer en demografische patronen;
+    </li>
+    <li>het diagnosticeren of oplossen van technologie problemen;
+    </li>
+    <li>het ontwikkelen en testen van nieuwe producten en features.
+    </li>
+    </ol>
+</p>
+<h2 class="cs-title">Hoe wordt deze informatie gedeeld?</h2>
+<p class="cs-text">
+    Wij zullen uw (persoons)gegevens niet verhuren of verkopen aan derden.
+</p>
+<h2 class="cs-title">Zeggenschapswijziging</h2>
+<p class="cs-text">
+    Wanneer AAAHive, of een deel daarvan, wordt verkocht, overgedragen of een onze activa bij
+    een andere organisatie terecht komt (bijvoorbeeld als gevolg van een fusie, overname,
+    faillissement, ontbinding of liquidatie), dan kunnen gegevens die via de Website zijn
+    verzameld onder de verkochte of overgedragen zaken vallen. De koper of verkrijger zal de
+    afspraken in deze Privacy Policy moeten opvolgen.
+</p>
+<h2 class="cs-title">Wettelijk verzoek en voorkoming schade</h2>
+<p class="cs-text">
+    Op grond van een wettelijk verzoek zijn wij gerechtigd om toegang te krijgen tot uw informatie
+    en dit te bewaren en/of te delen in antwoord op een wettelijk verzoek (zoals een
+    huiszoekingsbevel, gerechtelijk bevel of een dagvaarding). Wij zijn ook gerechtigd om uw
+    informatie te bewaren en/of te delen wanneer wij geloven dat dit noodzakelijk is voor het
+    opsporen, voorkomen en aankaarten van fraude of andere illegale activiteiten en om ons, u en
+    anderen te beschermen. Informatie die wij ontvangen over u kan worden geopend, bewerkt en
+    bewaard voor een langere periode wanneer dit noodzakelijk is vanwege een juridisch verzoek
+    of verplichting, een onderzoek met betrekking tot onze voorwaarden, beleid of om anderszins
+    schade te voorkomen.
+</p>
+<p class="cs-text">
+    AAAHive heeft passende technische en organisatorische maatregelen genomen om uw
+    gegevens te beveiligen tegen verlies of tegen enige vorm van onrechtmatige verwerking. Wij
+    gebruiken veiligheidsmaatregelen om te zorgen dat informatie via de Website wordt beveiligd.
+    Echter, AAAHive kan niet verzekeren dat de informatie op de Website niet wordt geopend,
+    onthuld, veranderd of vernietigd. U bent te allen tijde verantwoordelijk voor het beheren van
+    de e-mails tussen u en AAAHive. Wij zijn niet verantwoordelijk voor de functionaliteit,
+    privacy of veiligheidsmaatregelen van enige andere organisatie.
+</p>
+<h2 class="cs-title">Internationale overdraging</h2>
+<p class="cs-text">
+    Uw informatie kan worden overgedragen en onderhouden op computers en/of servers die zich
+    buiten Nederland en/of de EU bevinden en waar de wetten omtrent gegevensbescherming
+    kunnen verschillen. Wij spannen ons in om ervoor te zorgen dat ook wanneer uw
+    persoonsgegevens buiten de EU worden verwerkt, zij op een juridisch juiste en zorgvuldige
+    wijze buiten de EU worden verwerkt.
+</p>
+<h2 class="cs-title">Bewaartermijn</h2>
+<p class="cs-text">
+    In overeenstemming met de AVG en de overige relevante wetgeving, bewaart AAAHive
+    persoonsgegevens niet langer dan noodzakelijk is voor de verwezenlijking van de doeleinden
+    waarvoor zij verzameld of verwerkt worden, tenzij AAAHive hiertoe op grond van een
+    wettelijke bepaling verplicht is. Indien u meer informatie wil over hoelang uw specifieke
+    persoonsgegevens bewaard blijven, kunt u contact opnemen met privacy@aaahive.com.
+</p>
+<h2 class="cs-title">Recht op inzage, correcties, recht op bezwaar en recht op dataportabiliteit</h2>
+<p class="cs-text">
+    Wanneer u inzage wilt in uw persoonsgegevens, als u uw gegevens wilt wijzigen of verwijderen
+    of als u uw persoonsgegevens geheel of gedeeltelijk wilt laten overdragen aan u of aan een
+    derde dan kunt u contact opnemen met AAAHive door een e-mail te sturen naar
+    privacy@aaahive.com of een brief sturen aan:<br/>
+    AAAHive Solutions B.V.<br/>
+    2e Delistraat 8<br/>
+    3531SZ, Utrecht<br/>
+</p>
+<h2 class="cs-title">Applicaties, websites en diensten van derden</h2>
+<p class="cs-text">
+    Wij zijn niet verantwoordelijk voor de praktijken van applicaties, websites of services van
+    derden die gelinkt zijn naar of van onze Website, waaronder de informatie of inhoud die
+    bijgaand is. Onze Privacy Policy is niet van toepassing wanneer u een link gebruikt om van
+    onze Website naar een andere applicatie, website of service te gaan. Uw gedragingen op een
+    applicatie, website of dienst van een derde, waaronder deze die een link hebben op onze
+    Website, zijn onderworpen aan de regels en het beleid van de derde.
+</p>
+<h2 class="cs-title">Privacy van kinderen</h2>
+<p class="cs-text">
+    Onze Website vraagt niet specifiek en bewust om gegevens van personen jonger dan 16 jaar
+    ("Kinderen"). Deze leeftijd kan variëren in elke Lidstaat tussen de leeftijd van 13 en 16 jaar.
+    Indien wij erachter komen dat wij persoonlijke gegevens hebben verzameld van Kinderen
+    zonder toestemming van hun ouder of voogd, dan zullen wij stappen ondernemen om deze
+    gegevens te verwijderen van onze servers. Als u vermoedens heeft dat uw kind zonder uw
+    toestemming persoonsgegevens heeft verstrekt aan ons, dan kunt u contact met ons opnemen
+    via privacy@aaahive.com. Indien u als kind persoonsgegevens achter hebt gelaten op onze site
+    en u deze wil verwijderen, dan zullen wij ons inspannen om deze gegevens te verwijderen. Als
+    u het vermoeden heeft dat u als kind persoonsgegevens aan ons heeft verstrekt, kunt u contact
+    met ons opnemen via privacy@aaahive.com.
+</p>
+<h2 class="cs-title">Wijzigingen</h2>
+<p class="cs-text">
+    AAAHive kan van tijd tot tijd deze Privacy Policy aanpassen of updaten. U wordt daarom
+    geadviseerd om deze Privacy Policy regelmatig te raadplegen. Aanpassingen van deze Privacy
+    Policy treden in werking op het moment dat deze zijn gepubliceerd op deze pagina.
+</p>
+<h2 class="cs-title">Contact</h2>
+<p class="cs-text">
+    Wanneer u vragen heeft over deze Privacy Policy, dan kunt u contact opnemen met AAAHive
+    door een e-mail te sturen naar privacy@aaahive.com.
+</p>
+            </div>
+        </section>
+                    
+
+        <!-- ============================================ -->
+        <!--                     CTA                      -->
+        <!-- ============================================ -->
+
+        <section id="contact">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Contact us</span>
+                    <h2 class="cs-title"></h2>
+                    <p class="cs-text">
+                        for a complementary consultation. We are keen to get to know you and your organisation better enabling us to more adequately illustrate our capabilities.
+                    </p>
+                    <!--
+                    <a href="/" class="cs-button-solid">Gret A Free Quote</a>
+                    -->
+                </div>
+            </div>
+            <!-- Background Image-->
+            <picture class="cs-picture">
+                <source media="(max-width: 750px)"  width="750"  height="359"  srcset="/img/arms-bump-750.webp">
+                <source media="(min-width: 751px)"  width="1500" height="718"  srcset="/img/arms-bump-1500.webp">
+                <source media="(min-width: 1501px)" width="3000" height="1435" srcset="/img/arms-bump-3000.webp">
+
+                <img loading="lazy" decoding="async" src="/img/arms-bump-1500.webp" alt="Arms bumping after achievement" width="1500" height="718" aria-hidden="true">
+            </picture>
+        </section>                                          
+    </main>
+
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-269">
+        <div class="cs-container">
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a aria-label="go back to home" class="cs-logo" href="/">
+                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/img/aaahive_logo_wb.webp" alt="logo" width="240" height="32">
+                </a>
+                <p class="cs-text">
+                    AAAHive&nbsp;Solutions&nbsp;B.V.<br/>
+                    2e&nbsp;Delistraat&nbsp;8<br/>
+                    3531SZ&nbsp;Utrecht,&nbsp;NL<br/>
+                    <br/>
+                    CoC&nbsp;93008341<br/>
+                    VAT&nbsp;NL866246952B01
+               </p>
+            </div>
+            <!-- Links -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Sitemap</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="#about">About Us</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="#services">Services</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <!-- Contact Info -->
+            <ul class="cs-contact">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Contact</span>
+                </li>
+                <li class="cs-contact-li">
+                    <a class="cs-contact-link" href="mailto:info@codestitch.com">info@aaahive.com</a>
+                </li>
+                <li class="cs-contact-li">
+                    <a class="cs-contact-link" href="tel: +31 6 14575607">
+                        +31 6 14575607
+                    </a>
+                </li>
+                <!-- Social Media -->
+                <!--
+                <li class="cs-contact-li cs-social-group">
+                    <div class="cs-social">
+                        <a class="cs-social-link" aria-label="visit google profile" href="/">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
+                        </a>
+                        <a class="cs-social-link" aria-label="visit facebook profile" href="/">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                        </a>
+                        <a class="cs-social-link" aria-label="visit instagram profile" href="/">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                        </a>
+                    </div>
+                </li>
+                -->
+            </ul>
+        </div>
+    </footer>
+                                
+
+    <script defer src="/js/nav.js"></script>
+</body>
+</html>

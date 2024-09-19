@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="/https://aaahive.com/">
+
+    <meta name="description" content="AAAHive Solutions - More Successful Fast with Data, Digital and AI">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="AAAHive Solutions - More Successful Fast with Data, Digital and AI"/>
+    <meta property="og:description" content="Profound technical and business expertise with focus on people _and_ achieving ambitious goals. Strategy is execution."/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aaahive.com/"/>
+    <meta property="og:image" content="/img/aaahive_logo.svg"/>
+    <meta property="og:image:secure_url" content="/img/aaahive_logo.svg"/>
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="/img/aaahive_logo.svg">
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/InterVariable.woff2" crossorigin>
+    <!-- only for italic text:
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/InterVariable-Italic.woff2" crossorigin>
+    -->
+
+    <link rel="stylesheet" href="/css/core-styles.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/dark.css">
+
+    <title>AAAHive - More Successful Fast with Data, Digital and AI</title>
+</head>
+<body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="/index.html" class="cs-logo" aria-label="back to home">
+                <img src="/img/aaahive_logo.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async"> AAAHive
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="/index.html" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        
+                        <li class="cs-li">
+                            <a href="#services" class="cs-li-link">
+                                Services
+                            </a>
+                        </li>
+
+                        <li class="cs-li">
+                            <a href="#about" class="cs-li-link">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li class="cs-li">
+                            <a href="#contact" class="cs-li-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="#contact" class="cs-button-solid cs-nav-button">Contact Us</a>
+
+            <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                <svg class="cs-moon" decoding="async" width="15" height="15" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" alt="moon icon - CC0 1.0" aria-hidden="true">
+                        <path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/>
+                </svg><br>
+                <svg class="cs-sun" decoding="async" width="15" height="15" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" alt="sun icon - CC0 1.0" aria-hidden="true">
+                    <path style="fill:#FFA600;" d="M507.834,301.608l-54.769-48.312l52.832-50.399c1.941-1.852,2.74-4.591,2.099-7.189
+                        c-0.642-2.597-2.629-4.655-5.211-5.401l-70.316-20.292l25.988-68.056c0.955-2.5,0.495-5.316-1.204-7.389
+                        c-1.7-2.072-4.383-3.085-7.038-2.657l-72.274,11.652l-5.878-72.561c-0.216-2.666-1.846-5.015-4.275-6.161
+                        c-2.429-1.146-5.291-0.917-7.504,0.601l-60.266,41.342L263.409,3.742C262.064,1.426,259.579,0,256.889,0
+                        c-2.69,0-5.174,1.426-6.519,3.742L208.347,76.11l-72.69-41.953c-2.327-1.343-5.197-1.349-7.528-0.018
+                        c-2.333,1.331-3.773,3.799-3.78,6.473l-0.176,72.795l-72.965-6.014c-2.675-0.22-5.275,0.997-6.807,3.194
+                        c-1.533,2.197-1.771,5.041-0.622,7.459l31.242,65.835L6.508,209.562c-2.516,0.943-4.335,3.15-4.773,5.789
+                        c-0.438,2.638,0.575,5.308,2.656,7.003l56.619,46.152l-50.813,52.41c-1.866,1.925-2.559,4.694-1.816,7.264
+                        c0.744,2.57,2.81,4.55,5.419,5.194l71.055,17.551L61.56,419.936c-0.856,2.535-0.286,5.331,1.494,7.336
+                        c1.781,2.005,4.502,2.913,7.137,2.382l71.76-14.443l8.721,72.278c0.319,2.655,2.041,4.938,4.513,5.99
+                        c2.474,1.052,5.323,0.712,7.475-0.891l58.596-43.647l39.055,59.566c1.382,2.179,3.789,3.492,6.367,3.492
+                        c0.098,0,0.196-0.002,0.295-0.006c2.687-0.104,5.115-1.626,6.368-3.992l34.107-62.405l61.839,38.974
+                        c2.273,1.432,5.137,1.55,7.522,0.31c2.382-1.24,3.919-3.65,4.03-6.322l3.031-72.734l72.674,8.84c2.664,0.324,5.31-0.791,6.928-2.927
+                        c1.618-2.137,1.966-4.969,0.914-7.43l-28.636-66.997l69.465-23.003c2.552-0.845,4.456-2.979,4.997-5.599
+                        C510.752,306.09,509.845,303.383,507.834,301.608z"/>
+                    <ellipse style="fill:#FFDB2D;" cx="254.35" cy="254.691" rx="155.069" ry="154.949"/>
+                    <path style="fill:#FFCA00;" d="M254.354,99.743c-3.884,0-7.732,0.147-11.543,0.428c80.25,5.901,143.525,72.825,143.525,154.521
+                        c0,81.695-63.275,148.619-143.525,154.521c3.811,0.28,7.66,0.428,11.543,0.428c85.641,0,155.068-69.373,155.068-154.948
+                        C409.422,169.116,339.995,99.743,254.354,99.743z"/>
+                </svg>
+            </button>
+            <div id="lang-selector">
+                <form id="lang-selector">
+                    <b>EN</b><br/>
+                    <a href="/nl/index.html">NL</a>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- ============================================ -->
+        <!--                    Hero                      -->
+        <!-- ============================================ -->
+
+                                
+        <!-- ============================================ -->
+        <!--                   Policy                   -->
+        <!-- ============================================ -->
+        <section id="policy">
+            <div class="cs-container">
+<h1 class="cs-title">PRIVACY POLICY</h1>
+<p class="cs-text">
+    This is the Privacy Policy of AAAHive Solutions B.V. (hereinafter referred to as "AAAHive,"
+    "we," "us" or "our"), a company having its address at 2e Delistraat 8, 3531SZ Utrecht.
+    AAAHive is registered with the Chamber of Commerce under number 93008341. Our Privacy
+    Policy explains how we collect, use, share and protect information in relation to our website
+    aaahive.com (the "Service"). We collect this information when you visit our website with your
+    computer, tablet, phone or smartwatch ("Computer"). We process personal data in a manner
+    that is in accordance with the General Data Protection Regulation (the “GDPR”), the GDPR-
+    based legislation and the other current privacy legislation.
+    By using the Service, you understand and agree to the collection and use of information in
+    accordance with this Privacy Policy. Our Privacy Policy applies to all visitors, users, and others
+    who access the Service ("Users").
+</p>
+<h2 class="cs-title">What kinds of information do we collect?</h2>
+<h3 class="cs-title">Information you provide</h3>
+<p class="cs-text">
+We collect the following information you provide us with directly:
+<ol>
+<li>a. Communications between you and AAAHive (e.g., we may send you Service-related
+emails);</li>
+</ol>
+</p>
+<h3 class="cs-title">Log file information</h3>
+<p class="cs-text">
+We collect information that your browser sends whenever you visit our Service. This log file
+information may include information such as your computer's Internet Protocol address,
+browser type, browser version, the pages of our Service that you visit, the time and date of
+your visit, the time spent on those pages and other statistics.
+</p>
+<h2 class="cs-title">Purposes of processing data</h2>
+<p class="cs-text">
+By using our Service, you leave certain information with us, for example by creating an
+account. This may include data such as name, e-mail address, place of residence, telephone
+number and payment details. «=naam_kort» collects and processes this data to make our
+services accessible. We also collect information about your Computer (such as IP address,
+browser type and operating system) so that we can improve our services. The personal data will
+not be provided to third parties unless we are obliged to do so on the basis of legislation and
+regulations.
+</p>
+<h2 class="cs-title">Legal basis for processing data</h2>
+<p class="cs-text">
+There are several bases on which «=naam_kort» can process personal data. These are: the
+execution of an agreement, the legitimate interest, based on a legal obligation or on the basis of
+your permission. We process your personal data to the extent necessary to achieve the purpose
+for which we collect the personal data.
+</p>
+<h2 class="cs-title">How do we use this information?</h2>
+<p class="cs-text">
+We use all the information we have to help us provide and support our Services. Here is how:
+<ol>
+<li>remember information so you will not have to re-enter it during your visit or the next
+time you visit the Service;
+</li>
+<li>provide, improve, test, and monitor the effectiveness of our Service;
+</li>
+<li>monitor metrics such as total number of visitors, traffic, and demographic patterns;
+</li>
+<li>diagnose or fix technology problems;
+</li>
+<li>develop and test new products and features.
+</li>
+</ol>
+</p>
+<h2 class="cs-title">How is this information shared?</h2>
+<p class="cs-text">
+We will not rent or sell your information to third parties outside AAAHive.
+</p>
+<h2 class="cs-title">Change of control</h2>
+<p class="cs-text">
+If we sell or otherwise transfer part or the whole of AAAHive or our assets to another
+organization (e.g., in the course of a transaction like a merger, acquisition, bankruptcy,
+dissolution, liquidation), your information collected through the Service may be among the
+items sold or transferred. The buyer or transferee will have to honor the commitments we have
+made in this Privacy Policy.
+</p>
+<h2 class="cs-title">Legal requests and preventing harm</h2>
+<p class="cs-text">
+We may access, preserve and share your information in response to a legal request (like a
+search warrant, court order or subpoena) if we have a good faith belief that the law requires us
+to do so. We may also access, preserve and share information when we have a good faith belief
+it is necessary to: detect, prevent and address fraud and other illegal activity; to protect
+ourselves, you and others, including as part of investigations; and to prevent death or imminent
+bodily harm. Information we receive about you may be accessed, processed and retained for an
+extended period of time when it is the subject of a legal request or obligation, governmental
+investigation, or investigations concerning possible violations of our terms or policies, or
+otherwise to prevent harm.
+</p>
+<h2 class="cs-title">Safety and security</h2>
+<p class="cs-text">
+AAAHive has taken appropriate technical and organizational measures by using the latest
+technologies to protect your information against loss or unlawful processing. We use
+safeguards to help keep the information collected through the Service secure. However,
+AAAHive cannot ensure the security of any information you transmit to AAAHive or
+guarantee that information on the Service may not be accessed, disclosed, altered, or
+destroyed. We request you to do your part to help us. You are responsible for controlling
+access to emails between you and AAAHive, at all times. We are not responsible for the
+functionality, privacy, or security measures of any other organization.
+</p>
+<h2 class="cs-title">International transfer</h2>
+<p class="cs-text">
+Your information may be transferred to, and maintained on computers located outside of your
+state, province, country or other governmental jurisdiction where the data protection laws may
+differ than those from your jurisdiction. If you are located outside Netherlands and choose to
+provide information to us, please note that we transfer the information to The Netherlands.
+Your consent to this Privacy Policy followed by your submission of such information
+represents your agreement to that transfer.
+</p>
+<h2 class="cs-title">Retention period</h2>
+<p class="cs-text">
+In accordance with the law, AAAHive does not retain data any longer than is required for
+attaining the purposes for which they were collected unless AAAHive is obliged to do so based
+on a legal provision.
+</p>
+<h2 class="cs-title">Inspection and correction</h2>
+<p class="cs-text">
+If you wish to know which of your data AAAHive has recorded or if you wish to amend or
+remove data that you cannot amend via your account, please contact AAAHive.
+</p>
+<h2 class="cs-title">Third-party applications, websites and services</h2>
+<p class="cs-text">
+We are not responsible for the practices employed by any applications, websites or services
+linked to or from our Service, including the information or content contained within them.
+Please remember that when you use a link to go from our Service to another application,
+website or service, our Privacy Policy does not apply to those third-party applications, websites
+or services. Your browsing and interaction on any third-party application, website or service,
+including those that have a link on our Services, are subject to that third party's own rules and
+policies.
+</p>
+<h2 class="cs-title">Children's privacy</h2>
+<p class="cs-text">
+Our Service does not address anyone under the age of 13 or 16 ("Children"), depending on the
+applicable EU privacy rules. The age threshold for obtaining parental consent varies between
+13 and 16 years. We do not knowingly collect personally identifiable information from
+children under 13 or 16. If you are a parent or guardian and you are aware that your Children
+has provided us with personal information, please contact us. If we become aware that we have
+collected personal information from a child under age 13 or 16 without verification of parental
+consent, we take steps to remove that information from our servers.
+</p>
+<h2 class="cs-title">Changes to this privacy policy</h2>
+<p class="cs-text">
+AAAHive may modify or update this Privacy Policy from time to time. We will notify you of
+any changes by posting the new Privacy Policy on this page. You are advised to review this
+Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when
+they are posted on this page.
+</p>
+<h2 class="cs-title">How to contact us</h2>
+<p class="cs-text">
+    If you have any questions about this Privacy Policy of the Service, please send an email to privacy@aaahive.com.
+</p>
+            </div>
+        </section>
+                    
+
+        <!-- ============================================ -->
+        <!--                     CTA                      -->
+        <!-- ============================================ -->
+
+        <section id="contact">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Contact us</span>
+                    <h2 class="cs-title"></h2>
+                    <p class="cs-text">
+                        for a complementary consultation. We are keen to get to know you and your organisation better enabling us to more adequately illustrate our capabilities.
+                    </p>
+                    <!--
+                    <a href="/" class="cs-button-solid">Gret A Free Quote</a>
+                    -->
+                </div>
+            </div>
+            <!-- Background Image-->
+            <picture class="cs-picture">
+                <source media="(max-width: 750px)"  width="750"  height="359"  srcset="/img/arms-bump-750.webp">
+                <source media="(min-width: 751px)"  width="1500" height="718"  srcset="/img/arms-bump-1500.webp">
+                <source media="(min-width: 1501px)" width="3000" height="1435" srcset="/img/arms-bump-3000.webp">
+
+                <img loading="lazy" decoding="async" src="/img/arms-bump-1500.webp" alt="Arms bumping after achievement" width="1500" height="718" aria-hidden="true">
+            </picture>
+        </section>                                          
+    </main>
+
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-269">
+        <div class="cs-container">
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a aria-label="go back to home" class="cs-logo" href="/">
+                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/img/aaahive_logo_wb.webp" alt="logo" width="240" height="32">
+                </a>
+                <p class="cs-text">
+                    AAAHive&nbsp;Solutions&nbsp;B.V.<br/>
+                    2e&nbsp;Delistraat&nbsp;8<br/>
+                    3531SZ&nbsp;Utrecht,&nbsp;NL<br/>
+                    <br/>
+                    CoC&nbsp;93008341<br/>
+                    VAT&nbsp;NL866246952B01
+               </p>
+            </div>
+            <!-- Links -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Sitemap</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="#about">About Us</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="#services">Services</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <!-- Contact Info -->
+            <ul class="cs-contact">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Contact</span>
+                </li>
+                <li class="cs-contact-li">
+                    <a class="cs-contact-link" href="mailto:info@codestitch.com">info@aaahive.com</a>
+                </li>
+                <li class="cs-contact-li">
+                    <a class="cs-contact-link" href="tel: +31 6 14575607">
+                        +31 6 14575607
+                    </a>
+                </li>
+                <!-- Social Media -->
+                <!--
+                <li class="cs-contact-li cs-social-group">
+                    <div class="cs-social">
+                        <a class="cs-social-link" aria-label="visit google profile" href="/">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
+                        </a>
+                        <a class="cs-social-link" aria-label="visit facebook profile" href="/">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                        </a>
+                        <a class="cs-social-link" aria-label="visit instagram profile" href="/">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                        </a>
+                    </div>
+                </li>
+                -->
+            </ul>
+        </div>
+    </footer>
+                                
+
+    <script defer src="/js/nav.js"></script>
+</body>
+</html>
