@@ -4,7 +4,7 @@
 /* Mobile */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #DF266C; /* #F9627D; */ /* #853A3A; */
+    --primary: #D92067; /* #F9627D; */ /* #853A3A; */
     --primaryLight: #001F3F;
     --secondary: #FFC30B; /* #E4A95F; */
     --secondaryLight: #FFBA43;
