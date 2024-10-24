@@ -158,6 +158,13 @@
     opacity: 0;
     z-index: -1111111;
   }
+
+/*-- -------------------------- -->
+<---  Simple Language Selector  -->
+<--- -------------------------- -*/
+form#lang-selector a {
+  display: inline-block;
+  min-width: 24px;
 }
 /*-- -------------------------- -->
 <---      Dark Mode Toggle      -->
