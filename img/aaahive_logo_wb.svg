@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="2400"
+   width="2050"
    height="400"
-   viewBox="0 0 634.99999 105.83333"
+   viewBox="0 0 542.39583 105.83333"
    version="1.1"
    id="svg1"
    inkscape:export-filename="../Documents/00gitwork/aaahive.github.io/img/aaahive_nov2024.webp"
@@ -27,17 +27,18 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      inkscape:zoom="0.43852551"
-     inkscape:cx="1387.6046"
-     inkscape:cy="285.04613"
+     inkscape:cx="1377.3429"
+     inkscape:cy="283.90595"
      inkscape:window-width="1728"
-     inkscape:window-height="789"
-     inkscape:window-x="154"
+     inkscape:window-height="790"
+     inkscape:window-x="0"
      inkscape:window-y="38"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
-     showguides="true">
+     showguides="true"
+     showgrid="false">
     <sodipodi:guide
-       position="52.963757,93.938928"
+       position="52.963757,93.938929"
        orientation="1,0"
        id="guide3"
        inkscape:locked="false" />
@@ -153,7 +154,7 @@
     </g>
     <g
        id="g20"
-       transform="matrix(2.7399608,0,0,2.7399608,76.122776,-126.33902)"
+       transform="matrix(2.2394378,0,0,2.2394378,80.391255,-94.334536)"
        style="fill:#cccccc;fill-opacity:1">
       <g
          id="g15"
